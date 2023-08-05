@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website Landing page</title>
+
+    <style>
+        /* CSS RESET*/
+        body
+        {
+            margin:0px;
+            padding:0px;
+            background: url("https://cdn.pixabay.com/photo/2016/11/22/22/24/adult-1850925_1280.jpg");
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .left
+        {
+            /*border:2px solid red;*/
+            position:absolute;
+            top:20px;
+            left:65px;
+            display:inline-block
+        }
+        .mid
+        {
+            display:block;
+            width:535px;
+            margin:35px auto;
+            /*border:2px solid green;*/
+        }
+        .right
+        {
+            position:absolute;
+            top:20px;
+            right:55px;
+            /*border:2px solid yellow;*/
+            display:inline-block;
+        }
+
+        .navbar li
+        {
+            display:inline-block;
+            margin:5px 12px;
+            list-style: none;
+            font-size:large;
+        }
+
+        .navbar li a
+        {
+            color:white;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,.navbar li a.active
+        {
+            color:yellow;
+            text-decoration: underline;
+        }
+
+        .left img
+        {
+            width:70px;
+            filter: invert(100%);
+        }
+        .left div
+        {
+            text-align: center;
+            color:white;
+            font-size: 12px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn
+        {
+            margin:15px 15px;
+            padding:6px;
+            background-color: black;
+            color:white;
+            border:2px solid grey;
+            border-radius: 6px;;
+            cursor:pointer;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:15px;
+        }
+
+        .btn:hover
+        {
+            background-color: rgb(102, 100, 100);
+        }
+
+        .container
+        {
+            border:2px solid white;
+            border-radius: 7px;
+            float:right;
+            width:300px;
+            margin:50px 70px;
+            padding:25px;
+
+        }
+
+        .container h1
+        {
+            font-size:25px;
+            text-align: center;
+            color:white;
+        }
+
+        .formentry input 
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            display: block;
+            width: 250px;
+            margin: 11px auto;
+            padding: 1px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 17px;        
+        }
+
+        .container button
+        {
+            display:block;
+            width:100px;
+            margin:12px auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <!---Left div for logo-->
+        <div class="left">
+            <img src="gym-logo.png" alt="Error">
+            <div class="content">
+                Vanshika Gym
+            </div>
+        </div>
+        <!---Mid div for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!---Right div for Buttons-->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join Best Gym of Delhi</h1>
+        <form action="#">
+            <div class="formentry">
+                <input type="text" name="name" id="name" placeholder="Enter your Name">
+            </div>
+            <div class="formentry">
+                <input type="text" name="age" id="age" placeholder="Enter your Age">
+            </div>
+            <div class="formentry">
+                <input type="text" name="gender" id="gender" placeholder="Enter your Gender">
+            </div>
+            <div class="formentry">
+                <input type="text" name="local" id="local" placeholder="Enter your Locality">
+            </div>
+            <div class="formentry">
+                <input type="email" name="mail" id="mail" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
